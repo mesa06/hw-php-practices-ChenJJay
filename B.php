@@ -22,8 +22,12 @@
             }
         }
     }
-    echo count($numArr);
-    /*for($i = 0 ; $i < count($numArr); $i++) {
-        echo $numArr[$i] . "<br/>";
-    }*/
+    //echo count($numArr);
+    for($i = 0 ; $i < count($numArr); $i++) {
+        $str = sprintf("%d",$numArr[$i]);
+        if($str[0]!=$str[1] && $str[1]!=$str[2] &&$str[0]!=$str[2]) {
+            echo $numArr[$i] . "<br/>";
+        }
+    }
+
 ?>
